@@ -1,2 +1,33 @@
 # C.A.A.-News
 Project 3: News App
+
+## User Story:
+As a news enthusiast I want our users to be updated on their preferred news.
+On launch, user will be presented with main page that consists of 4 news articles
+When a user interacts with an article they are prompted to login for full access to features.
+
+## Elevator Pitch:
+“Tired of navigating through complex new articles? We are too so we’ve created a user friendly news app to help you stayed updated with current news & save preferred articles”
+
+## Motivation:
+We’re motivated to create a simple easy to use app that allows users to save news articles.
+Description:
+A website that displays news articles in which you are also able to log into. When you log in you are able to view your recent reads and also save your favorites!
+
+## Technology used:
+- express.js
+- node.js
+- React.js
+- graphQL
+- mongoDB
+- News API: https://newsapi.org/docs/endpoints/top-headlines
+  
+
+## Deployment:
+Heroku: 
+
+## Screenshots:
+
+
+## Future ideas:
+
