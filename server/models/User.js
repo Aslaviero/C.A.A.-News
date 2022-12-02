@@ -8,6 +8,7 @@ const userSchema = new Schema({
     type: String,
     required: true,
     unique: true,
+    trim: true,
   },
   email: {
     type: String,
@@ -17,9 +18,14 @@ const userSchema = new Schema({
   password: {
     type: String,
     required: true,
-    minlength: 5,
+    minlength: 8,
   },
-  orders: [Savedarticles.schema],
+  // articles: [
+  //   {
+  //     type: Schema.Types.ObjectId,
+  //     ref: "Article",
+  //   },
+  // ],
 });
 
 // set up pre-save middleware to create password
