@@ -1,5 +1,5 @@
 const db = require("./connection");
-const { User, Articles, Savedarticles } = require("../models");
+const { User, Article, Savedarticles } = require("../models");
 
 await User.create({
   firstName: "Elijah",
