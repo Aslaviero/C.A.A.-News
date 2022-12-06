@@ -1,11 +1,14 @@
 const express = require("express");
-require("dotenv").config();
+const dotenv = require("dotenv");
 const { ApolloServer } = require("apollo-server-express");
 const { authMiddleware } = require("./utils/auth");
 const path = require("path");
 
+dotenv.config();
+
 const { typeDefs, resolvers } = require("./schemas");
 const db = require("./config/connection");
+const { models } = require("mongoose");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -13,18 +16,13 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: authMiddleware,
+  // dataSources: () => ({
+  //   GnewsAPI: new GnewsAPI(),
+  // }),
 });
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static(path.join(__dirname, "../client/build")));
-// }
-
-// app.get("/", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../client/build/index.html"));
-// });
 
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async (typeDefs, resolvers) => {
@@ -32,7 +30,7 @@ const startApolloServer = async (typeDefs, resolvers) => {
   server.applyMiddleware({ app });
 
   db.once("open", () => {
-    app.listen(PORT, () => {
+    app.listen(process.env.PORT, () => {
       console.log(`API server running on port ${PORT}!`);
       console.log(
         `Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`
