@@ -13,6 +13,12 @@ const articleSchema = new Schema({
   articleImage: {
     type: Image,
   },
+  articleurl: {
+    type: String,
+  },
+  articlepublishedAt: {
+    type: String,
+  },
 });
 
 const Article = model("Article, articleSchema");

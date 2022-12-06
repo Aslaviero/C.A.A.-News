@@ -6,9 +6,8 @@ mongoose.connect(
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-  }
+  },
+  console.log(`mongodb connected!`)
 );
 
 module.exports = mongoose.connection;
-
-// caanews.i5ssc2d.mongodb.net
