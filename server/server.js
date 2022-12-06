@@ -16,9 +16,6 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: authMiddleware,
-  // dataSources: () => ({
-  //   GnewsAPI: new GnewsAPI(),
-  // }),
 });
 
 app.use(express.urlencoded({ extended: false }));

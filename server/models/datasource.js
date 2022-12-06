@@ -1,7 +1,8 @@
 import { RESTDdataSource } from "apollo-datasource-rest";
 
 const API_KEY = "0d11668f5e5325f011212b86a61636fe";
-const API_URL = "https://gnews.io/api/v4/search?q=example&token=";
+const API_URL =
+  "https://gnews.io/api/v4/search?q=example&token=0d11668f5e5325f011212b86a61636fe";
 
 export class GnewsAPI extends RESTDdataSource {
   constructor() {
