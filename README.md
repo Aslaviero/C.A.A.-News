@@ -34,3 +34,9 @@ Heroku:
 ## Screenshots:
 
 ## Future ideas:
+
+- Allow users to login/ create account
+- Save articles to read at a later time
+- Have user dashboard show currated articles for what that user likes to read
+- Let users leave comments on articles to have discussions with others who enjoy the same news
+- Add links on the nav bar to let users select different genres of news to read
