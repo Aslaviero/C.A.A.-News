@@ -29,9 +29,13 @@ A website that displays news articles in which you are also able to log into. Wh
 
 ## Deployment:
 
-Heroku:
+Heroku: https://caa-news.herokuapp.com/
 
 ## Screenshots:
+
+<img src="https://github.com/Aslaviero/C.A.A.-News/blob/main/caanewsscreenshot.png">
+<img src="https://github.com/Aslaviero/C.A.A.-News/blob/main/figmascreenshot.png">
+<img src="https://github.com/Aslaviero/C.A.A.-News/blob/main/loginforcaanewsScreenshot%202022-12-06%20200639.png">
 
 ## Future ideas:
 
@@ -40,3 +44,11 @@ Heroku:
 - Have user dashboard show currated articles for what that user likes to read
 - Let users leave comments on articles to have discussions with others who enjoy the same news
 - Add links on the nav bar to let users select different genres of news to read
+
+## Contributors
+
+https://github.com/cris6820
+
+https://github.com/armandosjunior
+
+https://github.com/aslaviero
