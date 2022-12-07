@@ -29,8 +29,11 @@ A website that displays news articles in which you are also able to log into. Wh
 
 ## Deployment:
 
-Heroku:
+Heroku: https://caa-news.herokuapp.com/
 
 ## Screenshots:
 
 ## Future ideas:
+
+- Saved articles to read later
+- have currated news on your dashboard after you login that shows the type of news you typically read (example: politics, gaming, sports, etc...)
